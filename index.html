@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="bootstrap.min.css">
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+
+    <div class="w-75  mx-auto p-5">
+        <h1 class="text-muted fs-1">bookmarker</h1>
+        <hr>
+        <button id="reset" class="btn btn-outline-danger">reset</button>
+        <div class=" p-5 text-center bg-secondary bg-opacity-25">
+            <h3 class="fs-2">bookmarker youer favorites sites</h3>
+            <label for="Name" class="py-3 fs-3 ">Site Name:</label>
+            <br>
+            <input  type="text" id="Name" class="m-3 form-control w-75 mx-auto is-valid">
+            <h5 class="messageRequired w-75 p-2 bg-danger bg-opacity-25 mx-auto my-2 d-none">Name is required</h5>
+            <h5 class="messageExist w-75 p-2 bg-danger bg-opacity-25 mx-auto my-2 d-none">Name is exist</h5>
+
+            <label for="Url" class="py-3 fs-3 ">Site Url:</label>
+            <br>
+            <input  type="text" id="Url" class="m-3 form-control w-75 mx-auto is-valid">
+            <h5 class="messageUrlRequired w-75 p-2 bg-danger bg-opacity-25 mx-auto my-2 d-none">Url is required</h5>
+            <h5 class="messageUrlExist w-75 p-2 bg-danger bg-opacity-25 mx-auto my-2 d-none">Url is exist</h5>
+
+            <button class="btn btn-outline-primary my-2" id="add" onclick="addBook()">add</button>
+        </div>
+
+    </div>
+    <div class="w-75 mx-auto p-5">
+        <table class="table shadow-lg p-5">
+            <tbody class="w-75" id="dataBody">
+            </tbody>
+        </table>
+    </div>
+
+
+
+
+    <script src="main.js"></script>
+</body>
+
+</html>
